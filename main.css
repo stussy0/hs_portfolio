@@ -1,0 +1,329 @@
+#wrap {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+}
+
+#header .menu {
+  float: right;
+  padding-top: 55px;
+  padding-left: 55px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+#header .menu li {
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 450px;
+}
+
+#main .name1 {
+  padding-top: 205px;
+  padding-left: 65px;
+}
+
+#main .name1 h2 {
+  font-size: 11.5rem;
+  line-height: 0.69;
+  font-weight: 400;
+}
+
+#main .text {
+  top: 100px;
+  padding-top: 85px;
+  padding-left: 75px;
+  font-family: 'Montserrat';
+  color: gray;
+  font-size: 0.8rem;
+}
+
+#main .name2 {
+  padding-top: 85px;
+  padding-left: 65px;
+  position: relative;
+}
+
+#main .name2 p {
+  font-size: 11.5rem;
+  line-height: 0.7;
+  position: relative;
+}
+
+#about {
+  margin: 0 auto;
+  width: 1050px;
+  height: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#about .a_h {
+}
+
+#about .a_h h2 {
+  width: 100%;
+  height: 275px;
+  font-size: 11.5rem;
+  line-height: 0.7;
+  font-weight: 400;
+}
+
+#about .a_sh {
+  float: left;
+}
+
+#about .a_sh img {
+  position: relative;
+  float: left;
+  right: 90px;
+  bottom: 20px;
+  opacity: 70%;
+  -webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+#about .a_sh ul {
+  display: inline-block;
+}
+
+#about .a_sh li {
+  text-align: center;
+  padding-top: 80px;
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 2rem;
+}
+
+/* #about .a_sh li:first-child {
+  margin-left: 0;
+} */
+
+#about p {
+  padding-top: 220px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+}
+
+#skills {
+  width: 100%;
+  padding-bottom: 400px;
+}
+
+.skill_n {
+  font-size: 7.5rem;
+  display: flex;
+}
+
+.title_marquee {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  padding: 150px 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.title_marquee .marquee {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (hover: hover) and (min-width: 700px) {
+  .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 7.5rem));
+    transform: translateY(calc(100% - 7.5rem));
+  }
+}
+
+#skills ul {
+  width: 100%;
+}
+
+#skills ul li {
+  position: relative;
+}
+
+.stack_container span {
+  display: flex;
+  margin-top: 10px;
+  padding: 32px 24px;
+  color: #c9c9c9;
+  border-top: 2px solid currentColor;
+  border-radius: 20px;
+  font-size: 2.5em;
+  position: relative;
+}
+
+#skills ul li p {
+  font-family: 'Montserrat';
+  position: absolute;
+  top: 0;
+  padding: 40px 24px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid currentColor;
+  color: #c9c9c9;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 1.75em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#skills ul li:hover span {
+  opacity: 0;
+}
+
+#skills ul li:hover p {
+  opacity: 1;
+}
+
+#projects {
+  margin: 0 auto;
+  width: 55%;
+  height: 3100px;
+  padding-top: 50px;
+}
+
+#projects .p_h h2 {
+  float: right;
+  font-size: 11.5rem;
+  line-height: 0.7;
+  font-weight: 400;
+  padding-bottom: 150px;
+}
+
+#projects .p_b img {
+  width: 400px;
+  height: 500px;
+}
+
+#projects .isakonx,
+#projects .qwwwr {
+  width: 900px;
+  height: 600px;
+  float: right;
+}
+
+#projects .isakonx img,
+#projects .qwwwr img {
+  float: right;
+  margin-right: 40px;
+}
+
+#projects .isakonx .txt_small,
+#projects .qwwwr .txt_small {
+  padding-left: 3rem;
+}
+
+#projects .gs img,
+#projects .hungry img {
+  float: left;
+}
+
+#projects .gs,
+#projects .hungry {
+  width: 900px;
+  height: 600px;
+  float: right;
+}
+
+#projects .gs .txt,
+#projects .hungry .txt,
+#projects .gs .txt_small,
+#projects .hungry .txt_small {
+  padding-right: 50px;
+  box-sizing: border-box;
+  text-align: right;
+  width: 500px;
+  float: right;
+}
+
+#projects .p_b .txt {
+  padding: 1.8rem 3rem;
+  font-size: 1.8rem;
+}
+
+#projects .txt_small {
+  color: rgb(147, 147, 147);
+  font-size: 1.1rem;
+}
+
+#projects span img {
+  opacity: 50%;
+  position: relative;
+  bottom: 120px;
+  left: 130px;
+  float: right;
+  -webkit-animation: rotation 7s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+#contact {
+  width: 100%;
+}
+
+#contact p {
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 11.5rem;
+  line-height: 0.7;
+  padding-bottom: 40px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 11.5rem;
+  line-height: 0.7;
+  font-weight: 400;
+  padding-bottom: 150px;
+}
