@@ -21,7 +21,7 @@
   float: left;
   margin-right: 10px;
   padding-right: 10px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 1rem;
 }
 
@@ -46,7 +46,7 @@
   top: 100px;
   padding-top: 85px;
   padding-left: 75px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   color: gray;
   font-size: 0.8rem;
 }
@@ -66,13 +66,12 @@
 #about {
   margin: 0 auto;
   width: 1050px;
-  height: 1100px;
+  height: auto;
   padding-top: 50px;
   text-align: center;
 }
 
 #about .a_h {
-
 }
 
 #about .a_h h2 {
@@ -85,7 +84,6 @@
 
 #about .a_sh {
   float: left;
-  
 }
 
 #about .a_sh img {
@@ -125,26 +123,50 @@
 #about p {
   padding-top: 220px;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 1.5rem;
 }
-
 
 #skills {
   width: 100%;
   padding-bottom: 400px;
 }
 
-#skills .skill_n {
-  font-size: 4.5rem;
+.skill_n {
+  font-size: 7.5rem;
   display: flex;
-  padding: 32px 24px;
-  justify-content: center;
-  align-items: flex-start;
-  color: #424242;
-  background-color: aliceblue;
-  border: 1px solid hsla(0, 0%, 100%, 0.15);
-  border-radius: 20px;
+}
+
+.title_marquee {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  padding: 250px 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.title_marquee .marquee {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (hover: hover) and (min-width: 700px) {
+  .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 7.5rem));
+    transform: translateY(calc(100% - 7.5rem));
+  }
 }
 
 #skills ul {
@@ -155,40 +177,32 @@
   position: relative;
 }
 
-#skills ul li span{
+.stack_container span {
   display: flex;
   margin-top: 10px;
   padding: 32px 24px;
-  justify-content: center;
-  align-items: flex-start;
-  color: #999999;
-  border: 1px solid hsla(0, 0%, 100%, 0.15);
+  color: #c9c9c9;
+  border-top: 2px solid currentColor;
   border-radius: 20px;
-  font-size: 3.75em;
-  z-index: 2;
+  font-size: 2.5em;
   position: relative;
 }
 
 #skills ul li p {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   position: absolute;
   top: 0;
-  left: 0;
-  margin: 0;
-  padding: 47px 24px;
+  padding: 40px 24px;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  color: #424242;
-  background-color: aliceblue;
-  border: 1px solid hsla(0, 0%, 100%, 0.15);
+  border: 2px solid currentColor;
+  color: #c9c9c9;
   border-radius: 20px;
   box-sizing: border-box;
   font-size: 1.75em;
   opacity: 0;
-  z-index: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -199,7 +213,6 @@
 #skills ul li:hover p {
   opacity: 1;
 }
-
 
 #projects {
   margin: 0 auto;
@@ -278,14 +291,16 @@
   bottom: 120px;
   left: 130px;
   float: right;
-    -webkit-animation: rotation 7s infinite linear;
+  -webkit-animation: rotation 7s infinite linear;
 }
-
 
 @-webkit-keyframes rotation {
-    from {-webkit-transform: rotate(0deg);}
-    to   {-webkit-transform: rotate(359deg);}
-}
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
 
 #contact {
