@@ -1,0 +1,424 @@
+#wrap {
+  width: 100%;
+  height: auto;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+}
+
+#header .menu {
+  float: right;
+  padding-top: 55px;
+  padding-left: 55px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+#header .menu li {
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  font-family: "Montserrat";
+  font-size: 1rem;
+}
+
+/* main */
+#main {
+  width: 100%;
+  height: auto;
+  padding-bottom: 28vw;
+}
+
+#main .name1 {
+  padding-top: 205px;
+  padding-left: 65px;
+}
+
+#main .name1 h2 {
+  font-size: 11.5rem;
+  line-height: 0.69;
+  font-weight: 400;
+}
+
+#main .text {
+  top: 100px;
+  padding-top: 85px;
+  padding-left: 75px;
+  font-family: "Montserrat";
+  color: gray;
+  font-size: 0.8rem;
+}
+
+#main .name2 {
+  padding-top: 85px;
+  padding-left: 65px;
+  position: relative;
+}
+
+#main .name2 p {
+  font-size: 11.5rem;
+  line-height: 0.7;
+  position: relative;
+}
+
+/* about */
+#about {
+  margin: 0 auto;
+  width: 100vw;
+  height: 80vh;
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 28vh;
+}
+
+#about .a_h {
+  margin: 0 auto;
+  width: 50vw;
+  height: 30vh;
+}
+
+#about .a_h h2 {
+  font-size: 11.5rem;
+  line-height: 0.7;
+  font-weight: 400;
+}
+
+#about .a_sh {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+#about .a_sh img {
+  position: relative;
+  float: left;
+  right: 20px;
+  bottom: 71px;
+  -webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+#about .a_sh ul {
+  width: 50vw;
+  margin: 0 auto;
+  position: absolute;
+}
+
+#about .a_sh li {
+  text-align: center;
+  padding-top: 4vh;
+  display: inline-block;
+  padding-left: 2vw;
+  font-size: 2rem;
+}
+
+/* #about .a_sh li:first-child {
+  margin-left: 0;
+} */
+
+#about p {
+  padding-top: 11vw;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+/* skills */
+#skills {
+  width: 100vw;
+  padding-bottom: 35vh;
+}
+
+#skills ul {
+  width: 100vw;
+}
+
+#skills ul li {
+  position: relative;
+}
+
+.animated-title {
+  font-size: 5.5rem;
+  position: relative;
+  width: 97vw;
+  max-width: 100vw;
+  height: 7vh;
+  padding: 100px 34px;
+  overflow: hidden;
+}
+.animated-title .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (hover: hover) and (min-width: 700px) {
+  .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 8rem));
+    transform: translateY(calc(100% - 8rem));
+  }
+}
+
+#skills ul li span {
+  font-family: "Montserrat";
+  display: flex;
+  margin-top: 10px;
+  padding: 32px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  color: #999999;
+  border: 1px solid hsla(0, 0%, 100%, 0.15);
+  border-radius: 20px;
+  font-size: 3.5em;
+  z-index: 2;
+  position: relative;
+}
+
+#skills ul li p {
+  font-family: "Montserrat";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 47px 24px;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #999999;
+  border: 1px solid hsla(0, 0%, 100%, 0.15);
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 2em;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#skills ul li:hover span {
+  opacity: 0;
+}
+
+#skills ul li:hover p {
+  opacity: 1;
+}
+
+/* PROJECT */
+#projects {
+  margin: 0 auto;
+  width: 60vw;
+  height: 360vh;
+  font-family: "Montserrat";
+}
+
+#projects .proj-top {
+  margin: 0 auto;
+  width: 60vw;
+  height: 30vh;
+}
+
+#projects .proj-top h2 {
+  float: right;
+  font-size: 11.5rem;
+  line-height: 0.7;
+  font-weight: 400;
+  font-family: "Playfair Display";
+}
+
+#projects .proj-in {
+  margin: 0 auto;
+  width: 60vw;
+  height: auto;
+}
+
+#projects .isakonx,
+.namyangmall {
+  width: 60vw;
+  height: 65vh;
+  padding-top: 9vh;
+}
+
+.isakonx .title,
+.namyangmall .title {
+  margin: 0 auto;
+  float: left;
+  width: 30vw;
+  height: 64vh;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  box-sizing: border-box;
+}
+
+.isakonx .title h3,
+.namyangmall .title h3 {
+  font-size: 1.8rem;
+  padding-left: 1.8vw;
+  padding-bottom: 1vh;
+}
+
+.isakonx .txt-project,
+.namyangmall .txt-project {
+  font-size: 1.15rem;
+  padding-left: 1.8vw;
+  color: #d19db1;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.isakonx .txt-in,
+.namyangmall .txt-in {
+  padding-left: 1.8vw;
+}
+
+.isakonx .txt-in li,
+.namyangmall .txt-in li {
+  padding-top: 0.79vw;
+  font-size: 1rem;
+}
+
+.isakonx picture,
+.namyangmall picture {
+  float: right;
+  width: 24vw;
+  padding-right: 6vw;
+}
+
+.isakonx picture img,
+.namyangmall picture img {
+  width: 24vw;
+  height: 64vh;
+}
+
+.link {
+  color: rgb(81, 81, 221);
+}
+
+.link:hover {
+  border-bottom: 1px solid rgb(81, 81, 221);
+}
+
+vwprojects .gs,
+.arrive {
+  width: 60vw;
+  height: 65vh;
+  padding-top: 9vh;
+}
+
+.gs .title,
+.arrive .title {
+  float: right;
+  width: 31vw;
+  height: 56vh;
+  padding-top: 5vh;
+  padding-right: 6vw;
+  box-sizing: border-box;
+}
+
+.gs .title h3 {
+  font-size: 1.8rem;
+  padding: 0 1.8vw 1vh 18.3vw;
+}
+
+.arrive .title h3 {
+  font-size: 1.8rem;
+  padding: 0 1.8vw 1vh 10.3vw;
+}
+
+.arrive .txt-project {
+  font-size: 1.15rem;
+  color: #d19db1;
+  border-bottom: 2px solid #ccc;
+  padding: 0 1.8vw 1vh 18.4vw;
+}
+
+.gs .txt-project {
+  font-size: 1.15rem;
+  color: #d19db1;
+  border-bottom: 2px solid #ccc;
+  padding: 0 1.8vw 1vh 17.4vw;
+}
+
+.gs .txt-in,
+.arrive .txt-in {
+  text-align: right;
+  padding-right: 1.8vw;
+}
+
+.gs .txt-in li,
+.arrive .txt-in li {
+  padding-top: 0.79vw;
+  font-size: 1rem;
+}
+
+.gs picture,
+.arrive picture {
+  width: 24vw;
+  padding-left: 5vw;
+}
+
+.gs picture img,
+.arrive picture img {
+  width: 24vw;
+  height: 64vh;
+}
+
+#projects .star {
+  opacity: 50%;
+  position: relative;
+  bottom: 120px;
+  left: 130px;
+  float: right;
+  -webkit-animation: rotation 7s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+/* contact */
+#contact {
+  width: 100vw;
+  height: auto;
+}
+
+#contact p {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 11.5rem;
+  line-height: 0.7;
+  padding-bottom: 40px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 11.5rem;
+  line-height: 0.7;
+  font-weight: 400;
+  padding-bottom: 150px;
+}
