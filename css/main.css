@@ -28,7 +28,7 @@
 #main {
   width: 100%;
   height: auto;
-  padding-bottom: 28vw;
+  padding-bottom: 20vw;
 }
 
 #main .name1 {
@@ -67,10 +67,10 @@
 #about {
   margin: 0 auto;
   width: 100vw;
-  height: 80vh;
+  height: auto;
   padding-top: 50px;
   text-align: center;
-  padding-bottom: 28vh;
+  padding-bottom: 13vh;
 }
 
 #about .a_h {
@@ -129,7 +129,7 @@
   padding-top: 11vw;
   text-align: center;
   font-family: "Montserrat";
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 /* skills */
