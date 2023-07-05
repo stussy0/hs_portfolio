@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HS_FILE</title>    
+    <title>HS_FILE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,246 +18,308 @@
     />
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    
-    <script src="./js/jquery.js"></script>
-    <script src="./js/main.js"></script>
-
   </head>
 
   <body>
-    <id="wrap">
+    <div id="wrap">
+      <!-- ####################### Header ####################### -->
       <header id="header">
-        <div class="menu">
+        <div id="button-container">
+          <button id="nightButton">night</button>
+          <button id="dayButton">day</button>
+        </div>
+        <div class="header-inner">
           <ul>
             <li><a href="#main">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects">PROJECT</a></li>
-            <li><a href="#contact">CONTACT ME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </header>
-      <!-- MAIN -->
+      <!-- ####################### Main ####################### -->
       <div id="main">
-        <div class="name1">
+        <div class="main-name1">
           <h2>HA SEUNG <br />HWANG</h2>
         </div>
-        <div class="text">
+        <div class="main-text">
           DESIGN IS NOT JUST<br />
           WHAT IT LOOKS LIKE AND FEELS LIKE.<br />
           DESIGN IS HOW IT WORKS.
         </div>
-        <div class="name2">
+        <div class="main-name2">
           <p>FRONTEND <br />DEVELOPER</p>
         </div>
       </div>
 
-      <!-- ABOUT -->
+      <!-- ####################### About ####################### -->
       <div id="about">
-        <div class="a_h">
-          <h2>
-            ABOUT_<br />
-            ME:
-          </h2>
-        </div>
-        <div class="a_sh">
-          <img src="./images/star.png" alt="" />
-          <ul>
-            <li>CREATIVE</li>
-            <li>COOPERATE</li>
-            <li>METICULOUS</li>
-          </ul>
-          <p>
-            I'm a Front-end developer with solid semantic (HTML, CSS, and
-            javascript) skills. since I started learning coding I built several
-            projects that made me sharpen my skills in frontend. Participating in
-            multiple coding challenges made develope a frontend a solid designer
-            Eye and solidify my knowelage in the UX/UI fundmentals.
-            <br />
-            <br />My work is focused on helping creatives and businesses express ideas with the tools of design and technology and to connect with their audiences in an effective way.
-            <br> For me, each project I have the privilege to work on is a new opportunity to learn new things, meet people with ideas that differ from mine and discover things about myself I never knew were beneath the layers of all of me. 
-          </p>
+        <div class="about-inner">
+          <div class="about-top">
+            <h2>
+              ABOUT_<br />
+              ME:
+            </h2>
+          </div>
+          <picture><img src="./images/star.png" alt="" /></picture>
+          <div class="about-con">
+            <div class="about-cons1">
+              <span class="about-name">CREATIVE</span>
+              <p class="about-desc">창의적인</p>
+              <span class="about-name">COLLABORATE</span>
+              <p class="about-desc">협업</p>
+              <span class="about-name">METICULOUS</span>
+              <p class="about-desc">세심한</p>
+            </div>
+            <div class="about-cons2">
+              <span class="about-text-en">
+                I am a beginner in the field of front-end development, but I
+                have a strong passion for learning and growing in this field. I
+                have acquired foundational knowledge in HTML, CSS, and
+                JavaScript, and I aspire to expand my skills further.
+                <br /><br />I am enthusiastic about taking on new projects and
+                challenges that will help me enhance my abilities and gain
+                practical experience. I approach my work with dedication,
+                attention to detail, and a willingness to learn from others.
+                <br /><br />While I understand that being a beginner means there
+                is still much to learn, I am determined to become a skilled
+                front-end developer with confidence. With each project and
+                opportunity, I strive to improve my skills and contribute to the
+                success of the team.<br /><br />I believe that the beginner
+                phase is an exciting stage filled with potential for growth. I
+                am ready to embrace this journey and develop my skills as a
+                front-end developer.
+              </span>
+              <p class="about-text-ko">
+                저는 프론트엔드 개발 분야에서는 초보자이지만, 이 분야에 대한
+                학습과 성장에 강한 열정을 갖고 있습니다. HTML, CSS, JavaScript에
+                대한 기본 지식을 습득했으며, 더 나아가 저의 기술을 더욱
+                발전시키고자 합니다.<br /><br /><br />
+                제 능력을 향상시키고 실전 경험을 쌓을 수 있는 새로운 프로젝트와
+                도전에 열망합니다. 업무에 헌신하며 세부사항에 주의를 기울이고,
+                다른 사람들로부터 배우는 의지를 가지고 작업에 임합니다.<br /><br /><br />초보자라는
+                것은 아직 배울 점이 많다는 것을 알고 있지만, 저는 자신감을
+                가지고 능숙한 프론트엔드 개발자가 될 것을 다짐하고 있습니다.
+                각각의 프로젝트와 기회에서 제 능력을 향상시키고 팀의 성공에
+                기여하기 위해 노력합니다.<br /><br /><br />
+                초보자로서의 시기는 성장의 잠재력으로 가득한 흥미로운 단계라고
+                믿습니다. 저는 이 여정에 도전하고 프론트엔드 개발자로서의 기술을
+                개발하는 것에 기대를 갖고 있습니다.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- skills -->
+
+      <!-- ####################### skills ####################### -->
       <div id="skills">
-        <div class="stack_container">
+        <div class="skills-top">MY<br />SKILLS</div>
+        <div class="skills-list">
+          <div class="skills-row">
+            <br />
+            <p class="skills-text">
+              Here are the tools and technologies I can use:
+            </p>
+            <ul class="skills-con">
+              <li class="text">
+                <span class="text-inner">User Experience Design</span>
+                <p class="skill-desc">
+                  비즈니스 목표와 사용자 요구를 결합하기 위한 디자인 전략과
+                  기법을 활용합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">Responsive Web Design</span>
+                <p class="skill-desc">
+                  다양한 기기에 대응하여 반응형 웹사이트를 구축합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">Wireframing & protoyping</span>
+                <p class="skill-desc">
+                  와이어프레임 및 프로토타입을 통해 디자인 아이디어를
+                  시각화합니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-row">
+            <ul class="skills-con">
+              <li class="text">
+                <span class="text-inner">Adobe XD</span>
+                <p class="skill-desc">
+                  와이어프레임, 사용자 플로우, 사용자 인터페이스를 만들고 테스트
+                  가능한 모형을 생성할 수 있습니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">Figma</span>
+                <p class="skill-desc">
+                  피그마를 활용하여 프로토타입을 제작하고 협업합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">Photoshop</span>
+                <p class="skill-desc">
+                  포토샵을 사용하여 간단한 이미지 편집 작업을 수행합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">GnuBoard</span>
+                <p class="skill-desc">
+                  그누보드를 사용하여 게시판(공지사항, FAQ 등)을 만듭니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-row">
+            <ul class="skills-con">
+              <li class="text">
+                <span class="text-inner">HTML5</span>
+                <p class="skill-desc">
+                  시멘틱 태그를 활용한 웹 페이지 구조를 작성합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">CSS3</span>
+                <p class="skill-desc">
+                  다양한 스타일링 기법을 사용하여 웹 페이지를 디자인합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">JavaScript</span>
+                <p class="skill-desc">
+                  동적 웹 기능을 구현하기 위해 JavaScript를 사용합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">jQuery</span>
+                <p class="skill-desc">
+                  jQuery를 활용하여 웹 페이지를 조작하고 애니메이션을
+                  추가합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">Node.js</span>
+                <p class="skill-desc">
+                  Node.js를 사용하여 서버 측 JavaScript 개발을 수행합니다.
+                </p>
+              </li>
+              <li class="text">
+                <span class="text-inner">React</span>
+                <p class="skill-desc">
+                  React를 사용하여 동적이고 재사용 가능한 웹 컴포넌트 설계를
+                  합니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ####################### Projects ####################### -->
+      <div id="projects">
           <div class="animated-title">
             <div class="track">
-              <div class="content">&nbsp;MY SKILL - &nbsp;MY SKILL - &nbsp;MY SKILL - &nbsp;MY SKILL - &nbsp;MY SKILL - &nbsp;MY SKILL - </div>
+              <div class="content">
+                &nbsp;MY PROJECT - &nbsp;MY PROJECT - &nbsp;MY PROJECT -
+                &nbsp;MY PROJECT - &nbsp;MY PROJECT - &nbsp;MY PROJECT -
+              </div>
+              <div class="content-reverse">
+                &nbsp;MY PROJECT - &nbsp;MY PROJECT - &nbsp;MY PROJECT -
+                &nbsp;MY PROJECT - &nbsp;MY PROJECT - &nbsp;MY PROJECT -
+              </div>
             </div>
           </div>
-          <ul>
-            <li>
-              <span class="skill_name">HTML5</span>
-              <p class="skill_desc">웹접근성, 표준성을 준수하며 시멘틱태그를 이용해 마크업 할 수 있습니다.</p>
-            </li>
-            <li>
-              <span class="skill_name">CSS3</span>
-              <p class="skill_desc">position, display를 적절히 사용하여 반응형웹을 적용할 수 있습니다.</p>
-            </li>
-            <li>
-              <span class="skill_name">JAVASCRIPT</span>
-              <p class="skill_desc">javascript의 배열, 메소드, DOM을 이해하며 다양한 상황에 적용할 수 있습니다.</p>
-            </li>
-            <li>
-              <span class="skill_name">JQUERY</span>
-              <p class="skill_desc">관련 라이브러리와 애니메이션, 여러 메소드들을 잘 활용할 수 있습니다.</p>
-            </li>
-            <li>
-              <span class="skill_name">NODE.JS</span>
-              <p class="skill_desc">서버의 API를 구축할 수 있으며, DB와 연동하여 CRUD 기능을 수행할 수 있습니다.</p>
-            </li>
-            <li>
-              <span class="skill_name">REACT</span>
-              <p class="skill_desc">React 구조와 여러가지 hook들을 잘 알고 있으며, 범용적이고 재사용가능한 컴포넌트 설계를 할 수 있습니다.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-
-      <!-- PROJECT -->
-      <div id="projects">
-        <div class="proj-top">
-          <h2>
-            MY_<br />
-            PROJECT:
-          </h2>
-        </div>
-
-        <div class="proj-in">
-          <div class="isakonx">
-              <div class="title">
-                <h3>ISAKNOX</h3>
-                <p class="txt-project">개인프로젝트</p>
-
-                <ul class="txt-in">
-                  <li>#반응형웹 #HTML #CSS #JavaScript</li>
-                  <li>이자녹스 홈페이지를<br/> 리디자인하고 반응형 웹으로 만들어<br> 
-                    모든 환경에서 사용 가능합니다.
-                  </li>
-                  <li>배포링크: 
-                    <a class="link" href="https://stussy0.github.io/isaknox/" target="_blank">
-                    https://stussy0.github.io/isaknox/</a></li>
-                  </li>
-                </ul>
-              </div>
-
-              <picture>
-                <a href="https://stussy0.github.io/isaknox/ target="_blank"">
-                  <img src="./images/11-1.png" alt="" />
-                </a>
-              </picture>
-            </div>
-
-            <div class="gs">
-              <div class="title">
-                <h3>GS건설</h3>
-                <p class="txt-project">개인프로젝트</p>
-
-                <ul class="txt-in">
-                  <li>#CloneCoding #HTML #CSS #JavaScript</li>
-                  <li>GS건설 홈페이지를 퍼블리싱<br/> 목적으로 클론코딩하였습니다.
-                  </li>
-                  <li>배포링크: 
-                    <a class="link" href="https://stussy0.github.io/gs/" target="_blank">
-                    https://stussy0.github.io/gs/</a></li>
-                  </li>
-                </ul>
-              </div>
-
-              <picture>
-                <a href="https://stussy0.github.io/gs/ target="_blank"">
-                  <img src="./images/22-2.png" alt="" />
-                </a>
-              </picture>
-            </div>
           
 
-            <div class="namyangmall">
-              <div class="title">
-                <h3>남양몰 작업중 </h3>
-                <p class="txt-project">개인프로젝트</p>
-
-                <ul class="txt-in">
-                  <li>#CloneCoding #React</li>
-                  <li>리액트 클론코딩 작업 중
-                  </li>
-                  <li>배포링크: 
-                    <a class="link" href="https://namyangmall.netlify.app" target="_blank">
-                    https://namyangmall.netlify.app</a></li>
-                  </li>
-                </ul>
+          <div class="projects-inner">
+            <div class="proj-top">
+              <div class="line-top"></div>
+              <img src="./images/isaknox-main.png" alt="">
+              <div class="proj-con">
+                <h4>Isakonx</h4>
+                <p>개인프로젝트<br/><br/>이자녹스 홈페이지를 리디자인하고 반응형 <br/>웹으로 만들어
+                  모든 환경에서 사용 가능합니다.<br><br>반응형웹 · HTML · CSS · JavaScript
+                </p>
+                <button onclick="window.open('https://stussy0.github.io/isaknox/', '_blank')">Go To Website</button>
+                <button class="not-bt">Case-study coming soon</button>
               </div>
-
-              <picture>
-                <a href="/">
-                  <img src="./images/33-2.png" alt="https://namyangmall.netlify.app" />
-                </a>
-              </picture>
+              <div class="line-bot"></div>
             </div>
 
-            <div class="arrive">
-              <div class="title">
-                <h3>팀프로젝트 작업중</h3>
-                <p class="txt-project">팀프로젝트</p>
-
-                <ul class="txt-in">
-                  <li>#TeamProject</li>
-                  <!-- <li>작업예정
-                  </li>
-                  <li>배포링크: 
-                    <a class="link" href="" target="_blank">/</a></li>
-                  </li> -->
-                </ul>
+            <div class="proj-top">
+              <div class="line-top"></div>
+              <img src="./images/namyang-main.png" alt="">
+              <div class="proj-con">
+                <h4>Namyangmall</h4>
+                <p>개인프로젝트<br/><br/>리액트 클론코딩 작업 중<br><br>CloneCoding · React
+                </p>
+                <button>Go To Website</button>
               </div>
-              <picture>
-                <a href="" target="_blank">
-                  <img src="./images/bbc.png" alt="" />
-                </a>
-              </picture>
+              <div class="line-bot"></div>
             </div>
+            
 
-            <div class="cadillac">
-              <div class="title">
-                <h3>CADILLAC.kr 리액트 작업중 </h3>
-                <p class="txt-project">개인프로젝트</p>
-
-                <ul class="txt-in">
-                  <li>#React</li>
-                  <li>캐딜락 홈페이지를 리디자인하고 리액트로 작업 중입니다.
-                  </li>
-                  <li>배포링크: 
-                    <a class="link" href="https://cadillac-kr.netlify.app" target="_blank">
-                      https://cadillac-kr.netlify.app</a></li>
-                  </li>
-                </ul>
+            <div class="proj-top">
+              <div class="line-top"></div>
+              <img src="./images/bbc.png" alt="">
+              <div class="proj-con">
+                <h4>BBC Englsh</h4>
+                <p>팀프로젝트<br/><br/>작업인원: 3인 / 작업기간: 4일<br/>담당업무: 서브페이지 작업(ABOUT, LEVEL1, FAQ) <br/><br/>BBC 사이트를 사용자가 편리하게 이용할 수 있는<br> 영어 학습 사이트로 재디자인했습니다.<br><br>html · css · javaScript · Figma
+                </p>
+                <button onclick="window.open('https://jaehan-bae.github.io/bbcEnglish/', '_blank')">Go To Website</button>
+                <button class="not-bt">Case-study coming soon</button>
               </div>
-
-              <picture>
-                <a href="https://cadillac-kr.netlify.app" target="_blank">
-                  <img src="./images/cadillac.png" alt="" />
-                </a>
-              </picture>
+              <div class="line-bot"></div>
             </div>
 
-
-            <div class="star">
-              <img src="./images/star2-removebg-preview.png" alt="" />
+            <div class="proj-top">
+              <div class="line-top"></div>
+              <img src="./images/cadillac.png" alt="">
+              <div class="proj-con">
+                <h4>Cadillac</h4>
+                <p>개인프로젝트<br/><br/>캐딜락 홈페이지를 리디자인하고 리액트로 작업 중입니다.<br><br>React · JavaScript
+                </p>
+                <button onclick="window.open('https://cadillac-kr.netlify.app', '_blank')">Go To Website</button>
+                <button class="not-bt">Case-study coming soon</button>
+              </div>
+              <div class="line-bot"></div>
             </div>
+          </div>
+        
 
+          
+
+          <div class="animated-title">
+            <div class="track">
+              <div class="content">
+                &nbsp;MY PROJECT - &nbsp;MY PROJECT - &nbsp;MY PROJECT -
+                &nbsp;MY PROJECT - &nbsp;MY PROJECT - &nbsp;MY PROJECT -
+              </div>
+              <div class="content-reverse">
+                &nbsp;MY PROJECT - &nbsp;MY PROJECT - &nbsp;MY PROJECT -
+                &nbsp;MY PROJECT - &nbsp;MY PROJECT - &nbsp;MY PROJECT -
+              </div>
+            </div>
+          </div>
+
+          <div class="star">
+                  <img src="./images/star2-removebg-preview.png" alt="" />
           </div>
         </div>
-          
-      <!-- CONTACT -->
+      
+
+      <!-- ####################### Contact ####################### -->
       <div id="contact">
-        <p>
-          ARE YOU<br />
-          MINDING A<br />
-          PROJECT?
-        </p>
-        <h2><a href="mailto:"stussy0@naver.com>CONTACT_ ME!</a>
+        <p>ARE YOU<br/> MINDING<br/> A PROJECT?</p>
+        <a href="mailto:stussy0@naver.com">CONTACT_ ME!</a>
       </div>
     </div>
+</div>
+    <script src="js/main.js"></script>
   </body>
 </html>
