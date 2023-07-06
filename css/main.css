@@ -135,7 +135,7 @@
   line-height: 0.7;
 }
 
-.about picture {
+#about picture {
   position: absolute;
   left: 400px;
   top: -176px;
